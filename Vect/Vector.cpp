@@ -28,4 +28,9 @@ int main()
 	}
 	cout << endl;
 
+	// Sort vector - sort() sorts in ascending order
+	sort(vect.begin(), vect.end());
+	reverse(vect.begin(), vect.end()); // reverse to get in descending order
+
+
 }
