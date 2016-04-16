@@ -32,5 +32,14 @@ int main()
 	sort(vect.begin(), vect.end());
 	reverse(vect.begin(), vect.end()); // reverse to get in descending order
 
+	// Print Sorted vector: using iterators
+	cout << "Sorted vector:" << endl;
+	v = vect.begin();
+	while (v != vect.end()) {
+		cout << *v << endl;
+		v++;
+	}
+	cout << endl;
 
+	return 0;
 }
