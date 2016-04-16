@@ -7,5 +7,6 @@ using namespace std;
 
 int main()
 {
+	vector <int> vect; // create an arbitrary sized vector
 
 }
