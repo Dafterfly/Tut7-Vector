@@ -5,6 +5,17 @@
 
 using namespace std;
 
+template <typename t>
+void printVect(vector<t> vec)
+{
+	vector<int>::iterator v = vec.begin();
+	while (v != vec.end()) {
+		cout << *v << endl;
+		v++;
+	}
+	cout << endl;
+}
+
 int main()
 {
 	vector <int> vect; // create an arbitrary sized vector
@@ -21,12 +32,7 @@ int main()
 
 	// Print Generated vector: using iterators
 	cout << "Generated vector:" << endl;
-	vector<int>::iterator v = vect.begin();
-	while (v != vect.end()) {
-		cout << *v << endl;
-		v++;
-	}
-	cout << endl;
+	printVect(vect);
 
 	// Sort vector - sort() sorts in ascending order
 	sort(vect.begin(), vect.end());
@@ -34,12 +40,7 @@ int main()
 
 	// Print Sorted vector: using iterators
 	cout << "Sorted vector:" << endl;
-	v = vect.begin();
-	while (v != vect.end()) {
-		cout << *v << endl;
-		v++;
-	}
-	cout << endl;
+	printVect(vect);
 
 	return 0;
 }
