@@ -6,7 +6,7 @@
 using namespace std;
 
 template <typename t>
-void printVect(vector<t> vec)
+void printVect(vector<t> vec) // prints a vector of an arbitrary type
 {
 	vector<int>::iterator v = vec.begin();
 	while (v != vec.end()) {
